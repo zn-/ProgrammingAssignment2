@@ -3,7 +3,7 @@
 
 ## Function to create a special "matrix" object, which returns a list
 ## containing functions to set, get value of matrix and set, get value 
-## of inverse
+## of inverse of that matrix
 
 makeCacheMatrix <- function(x = matrix()) {
       Inv <- NULL
@@ -24,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Funtion to calculate the inverse of special "matrix" created above
 ## if the inverse of matrix is already calculated, then source it from 
-## the mean and skip the computaion
+## the cache and skip the computation
 
 cacheSolve <- function(x, ...) {
         
